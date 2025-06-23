@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+background-color: aqua;
+justify-content: space-between;
+
+}
+
+.container> div{
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    flex-wrap: wrap;
+    
+    flex-direction: column;
+
+}
+.container >div:nth-child{
+    display: flex;
+    flex-grow: 1;  
+    background-color: black;  
+    margin: 15px;
+}
