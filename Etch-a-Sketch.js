@@ -31,8 +31,19 @@ cbtn.addEventListener('click', changesize);
 
 function changesize(){
 
+    let done = false;
     console.log("adfffff")
-    max = window.prompt("grid size","16");
+    do{max = window.prompt("grid size","16");
+        if(max <=100){
+            done = true
+        }
+
+    }while(!done)
+
+    while (sect.firstChild) {
+        sect.removeChild(sect.firstChild);
+        console.log("asdffff");
+    }
     playgame();
     
 }
