@@ -23,15 +23,18 @@ function playgame(){
 
 }
 
-playgame();
 
 
-let cbtn =  document.getElementById("#cbtn");
-cbtn.addEventListener('click', changesize());
+
+let cbtn =  document.querySelector("#cbtn");
+cbtn.addEventListener('click', changesize);
 
 function changesize(){
 
-   return console.log("adfffff")
-   //return maxf = window.prompt("grid size","16");
+    console.log("adfffff")
+    max = window.prompt("grid size","16");
+    playgame();
     
 }
+
+playgame();
